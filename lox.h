@@ -35,7 +35,11 @@ public:
   int run_repl();
 
 private:
+  bool had_error = false;
+
   int run(std::string line);
+
+  int report_error(std::string msg, std::string where, int line);
 };
 
 #endif /* LOX_H */

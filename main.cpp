@@ -7,13 +7,9 @@
  */
 
 #include "lox.h"
-#include <iostream>
 
-/**
- * @def USAGE_ERROR
- * @brief The exit code for bad cli usage, as defined in sysexits.h
- */
-#define USAGE_ERROR 64
+#include <iostream>
+#include <sysexits.h>
 
 int main(int argc, char *argv[]) {
   Lox lox;
@@ -23,7 +19,7 @@ int main(int argc, char *argv[]) {
         << "ERROR: Invalid number of arguments. Expected 0 or 1 argument.\n"
         << "Usage:\tcpplox [script] to run a script\n"
         << "\tcpplox to enter the REPL\n";
-    exit(USAGE_ERROR);
+    exit(EX_USAGE);
   } else if (argc == 2) {
     lox.run_file(argv[1]);
   } else {
