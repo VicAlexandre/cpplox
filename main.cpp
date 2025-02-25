@@ -1,5 +1,5 @@
 /**
- * @file        main.c
+ * @file        main.cpp
  * @brief       Main entry point for the Lox interpreter
  * @author      Victor Miranda <victoralexandre499@gmail.com>
  * @version     1.0.0

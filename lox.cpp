@@ -1,5 +1,5 @@
 /**
- * @file        lox.c
+ * @file        lox.cpp
  * @brief       Implements the Lox interpreter class
  * @author      Victor Miranda <victoralexandre499@gmail.com>
  * @version     1.0.0
