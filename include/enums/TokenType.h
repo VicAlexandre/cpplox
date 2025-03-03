@@ -6,6 +6,11 @@
  * @date        02/03/2025
  */
 
+#ifndef TOKEN_TYPE_H
+#define TOKEN_TYPE_H
+
+#include <string>
+
 /**
  * @brief All token types recognized by the scanner.
  */
@@ -55,5 +60,8 @@ enum class TokenType {
   TRUE,
   VAR,
   WHILE,
-  EOF
+
+  EOF_LOX,
 };
+
+#endif /* TOKEN_TYPE_H */
