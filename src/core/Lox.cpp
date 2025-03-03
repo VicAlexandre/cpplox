@@ -59,7 +59,7 @@ int Lox::report_error(std::string msg, std::string where, int line) {
   std::cerr << "[line " << line << "] Error" << where << ": " << msg
             << std::endl;
 
-  had_error = true;
+  Lox::had_error = true;
 
   return 0;
 }
