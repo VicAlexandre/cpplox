@@ -13,6 +13,10 @@
 #include "enums/TokenType.h"
 
 #include <string>
+
+/**
+ * @brief Represents a single unit of a Lox program
+ */
 class Token {
 public:
   Token(TokenType type, std::string lexeme, unsigned int line, void *literal)
