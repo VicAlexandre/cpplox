@@ -6,7 +6,7 @@
  * @date        24/02/2025
  */
 
-#include "lox.h"
+#include "core/Lox.h"
 
 #include <iostream>
 #include <sysexits.h>
