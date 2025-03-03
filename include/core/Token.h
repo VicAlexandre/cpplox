@@ -13,23 +13,19 @@
 #include "enums/TokenType.h"
 
 #include <string>
-
 class Token {
 public:
-  Token(TokenType type, std::string lexeme, unsigned int line,
-        LoxObject literal)
+  Token(TokenType type, std::string lexeme, unsigned int line, void *literal)
       : type(type), lexeme(lexeme), line(line), literal(literal) {}
   ~Token() {}
 
-  std::string to_string() {
-    return type.to_string() + " " + lexeme + " " + literal.to_string();
-  }
+  std::string to_string();
 
 private:
   TokenType type;
   std::string lexeme;
   unsigned int line;
-  LoxObject literal;
+  void *literal;
 };
 
 #endif /* TOKEN_H */

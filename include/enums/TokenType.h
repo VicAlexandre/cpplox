@@ -64,4 +64,6 @@ enum class TokenType {
   EOF_LOX,
 };
 
+std::string to_str(TokenType type);
+
 #endif /* TOKEN_TYPE_H */
