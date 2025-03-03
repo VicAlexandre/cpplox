@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-include_directories(src/)
+include_directories(src/ include/)
 
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB SOURCES "src/*.cpp" "src/core/*.cpp" "src/utils/*.cpp")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
